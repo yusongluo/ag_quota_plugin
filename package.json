@@ -1,0 +1,39 @@
+{
+  "publisher": "antigravity",
+  "name": "ag-quota-plugin",
+  "displayName": "Antigravity Quota Plugin",
+  "version": "0.0.1",
+  "description": "Monitors Antigravity AI quota usage",
+  "engines": {
+    "vscode": "^1.104.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "antigravity.quota.showDetails",
+        "title": "Show Quota Details"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/node": "^25.2.3",
+    "@types/vscode": "^1.104.0",
+    "ts-loader": "^9.5.4",
+    "typescript": "^5.9.3",
+    "webpack": "^5.105.2",
+    "webpack-cli": "^6.0.1"
+  }
+}
