@@ -19,6 +19,14 @@
       {
         "command": "antigravity.quota.showDetails",
         "title": "Show Quota Details"
+      },
+      {
+        "command": "antigravity.quota.showRawData",
+        "title": "Show Raw Quota JSON (Debug)"
+      },
+      {
+        "command": "antigravity.quota.selectModel",
+        "title": "Select Active Model to Monitor"
       }
     ]
   },
